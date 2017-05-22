@@ -7,7 +7,7 @@ $(document).ready(function(){
 	    	$('nav').css({'background-color':'#fff', 'color': '#000'});
 	
 	    }else{
-	    	$('nav').css({'background-color':'#fff', 'color': '#fff'})
+	    	$('nav').css({'background-color':'transparent', 'color': '#fff'})
 	    }
   	});
 })

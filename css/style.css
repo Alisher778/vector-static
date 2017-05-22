@@ -26,11 +26,11 @@ h4 {color: #1f2229;font: 24px 'Open Sans';margin-bottom: 20px; text-align: cente
 .sf-calculate-wrapper {background: transparent;border: none; min-height: 330px !important;}
 
 
-nav.main {padding: 15px;line-height: 40px; background: transparent; z-index: 100;position: fixed;width: 100%;left: 0;top: 0; color: #fff;}
-nav.main .img-responsive {display: inline-block;max-width: 100%; background-color: #fff; padding: 10px 17px; border-radius: 18px;}
+nav.main {padding: 15px;line-height: 40px; background: #fff; z-index: 100;position: fixed;width: 100%;left: 0;top: 0; }
+nav.main .img-responsive {display: inline-block;max-width: 100%;}
 nav.main .navbar-collapse ul {width: 440px;max-width: 100%;float: right;}
 nav.main .navbar-collapse {text-align: center; font-size: 16px;}
-nav.main .navbar-collapse a {white-space: nowrap;font-size: 14px;}
+nav.main .navbar-collapse a {white-space: nowrap; font-size: 16px; font-weight: 600;}
 nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60);}
 .header-contacts {white-space: nowrap;font: 700 16px/40px 'Open Sans';color: rgb(243, 156, 18);max-width: 270px;float: right;}
 .header-contacts i {margin-right: 8px;}
@@ -50,7 +50,7 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .moving-type .row span {display: block;width: 80px;height: 80px;border-radius: 50%;background: #f2f2f2; display: flex; display: -webkit-flex; align-items: center; -webkit-align-items:center; justify-content: center; -webkit-justify-content: center; margin: 0 auto 20px;}
 .moving-type .row i {font-size: 30px;color: rgb(243, 156, 18);}
 
-.banner-top {padding: 70px 0;background: url(../img/banner-top.jpg) top center no-repeat;color: #fff; position: relative; top: -70px; height:100vh;}
+.banner-top {padding: 70px 0;background: url(../img/header.jpg) top center no-repeat;color: #fff; height:100vh; display: flex; flex-direction: column; justify-content: center; background-size: cover;}
 .banner-top h2 {text-align: center;text-transform: uppercase;color: #fff;font: 700 50px/84px 'Open Sans';max-width: 900px;margin: 0 auto 50px;}
 .banner-top h2 ~ h5 {font: 20px/37px 'Open Sans';text-align: center;color: #fff;text-align: center;display: block;}
 .formblocks {padding: 35px 30px 40px;background: rgb(51, 78, 103); margin-bottom: 30px;}
