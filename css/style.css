@@ -35,7 +35,10 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .header-contacts {white-space: nowrap;font: 700 16px/40px 'Open Sans';color: rgb(243, 156, 18);max-width: 270px;float: right;}
 .header-contacts i {margin-right: 8px;}
 .header-contacts li:first-child {text-align: center;}
-.header-contacts li:last-child {text-align: right;}
+.header-contacts li:last-child {text-align: center; border: 1px solid; border-radius: 34px; cursor: pointer; transition: all 0.3s}
+.header-contacts li a{ text-decoration: none; }
+.header-contacts li:hover{background-color: orange; color: #fff;}
+
 
 .our-features {padding: 55px 15px 30px;text-align: center;font: 13px/20px 'Open Sans';}
 .our-features .row > div {margin-bottom: 30px;}
@@ -50,7 +53,8 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .moving-type .row span {display: block;width: 80px;height: 80px;border-radius: 50%;background: #f2f2f2; display: flex; display: -webkit-flex; align-items: center; -webkit-align-items:center; justify-content: center; -webkit-justify-content: center; margin: 0 auto 20px;}
 .moving-type .row i {font-size: 30px;color: rgb(243, 156, 18);}
 
-.banner-top {padding: 70px 0;background: url(../img/header.jpg) top center no-repeat;color: #fff; height:100vh; display: flex; flex-direction: column; justify-content: center; background-size: cover;}
+.banner-top {padding: 70px 0;background: url(../img/header.jpg) top center no-repeat;color: #fff; height: calc(100vh - 70px); display: flex; flex-direction: column; justify-content: center; background-size: cover;}
+/*.banner-top:before {content: ''; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-image: linear-gradient(to top,#2e3439,rgba(16, 16, 16, 0.71));  opacity: 0.6}*/
 .banner-top h2 {text-align: center;text-transform: uppercase;color: #fff;font: 700 50px/84px 'Open Sans';max-width: 900px;margin: 0 auto 50px;}
 .banner-top h2 ~ h5 {font: 20px/37px 'Open Sans';text-align: center;color: #fff;text-align: center;display: block;}
 .formblocks {padding: 35px 30px 40px;background: rgb(51, 78, 103); margin-bottom: 30px;}
