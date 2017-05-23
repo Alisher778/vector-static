@@ -67,9 +67,16 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 
 /*============ Services ================================*/
 
+.service-text-wrapper{display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px 0;}
 .streach{width: 100%; background-color: orange; }
 .streach.moving-type h3, .streach.moving-type p{color: #fff;}
-
+.service-link{position: relative; cursor: pointer;}
+.service-link .col-md-3.col-sm-6{transition: 0.8s; padding: 10px;}
+.service-link:hover .col-md-3.col-sm-6{background-color: orange; transform: scale(1.1); padding: 50px 10px; border-radius: 35px; box-shadow: inset 1px 4px 14px #f4f4f4;}
+.service-link button{margin-top: 15px; background: #fff; border: 1px solid orange; color: orange; border-radius: 19px; padding: 2px 10px;}
+.service-text-wrapper h2{ margin: 25px;}
+.service-text-wrapper p{ margin: 10px; font-size: 1.2em;}
+.service-text-wrapper ul{ width: 85%; list-style-type: circle; }
 
 
 
