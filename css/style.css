@@ -79,6 +79,21 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .service-text-wrapper ul{ width: 85%; list-style-type: circle; }
 
 
+/*============== FAQ ==================================*/
+
+.banner-top-faq{ background: url(../img/faq.png) center center no-repeat; height: calc(50vh - 70px); background-size: cover; display: flex; flex-direction: column; justify-content: center; position: relative;}
+.banner-top-faq:before {content: '';position: absolute;top: 0;left: 0;bottom: 0;right: 0;opacity: 0.7;background-image: linear-gradient(to top,#2e3439,rgba(16, 16, 16, 0.71));}
+.list-group-item{transition: 0.5s;}
+.list-group-item:focus, .list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover{ cursor: pointer; color: #fffdfd; font-size: 1.2em; text-decoration: none; background-color: rgb(247, 152, 13);}
+.faq-wrap{margin-top: 50px; font-size: 1.2em;}
+.faq-wrap h2, h2 + p{text-align: center; margin: 7px;}
+.faq-wrap .panel-body{border-left: 1px solid #eee; border-right: 1px solid #eee;}
+.faq-wrap .list-group-item{margin: 17px 0; padding: 16px 15px}
+
+
+
+
+
 
 
 /*.footer{background-color: #f39c12; padding: 50px 15px 40px;}*/
@@ -160,7 +175,7 @@ footer.container-fluid .h5 {margin: 0 0 10px;font: 600 16px 'Open Sans';color: r
 footer.container-fluid li {font-size: 13px; color: rgb(124, 126, 131);}
 footer.container-fluid li + li {margin-top: 7px;}
 footer.container-fluid li + li p {padding-top: 4px;}
-footer.container-fluid .bottom {color: rgb(124, 126, 131);font: 13px/20px 'Open Sans';padding-top: 20px;border-top: 1px solid #f2f2f2;margin-top: 30px;}
+footer.container-fluid .bottom {color: rgb(124, 126, 131);font: 13px/20px 'Open Sans';padding-top: 20px;border-top: 1px solid #f2f2f2;margin-top: 30px; display: flex; justify-content: center;}
 
 .bottom-tel {position: fixed;width: 100%;left: 0;bottom: 0;background: #fff;box-shadow: 2px -2px 3px 0px rgba(102,102,102,0.5); text-align: center;font-size: 18px;padding: 10px 0; color: rgb(124, 126, 131);display: none;}
 .bottom-tel i {margin-right: 10px;}
