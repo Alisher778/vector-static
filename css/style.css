@@ -50,7 +50,7 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 
 /*=============== About US ===========================*/
 
-.about-us{height: calc(100vh - 70px);}
+.banner-top-about{ background: url(../img/about2.png) center center no-repeat; height: calc(50vh - 70px); background-size: cover; }
 
 
 
