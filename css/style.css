@@ -97,6 +97,10 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .comments h4 {padding: 40px 0 30px;border-top: 1px solid #ededed;}
 .comments h4 + div {display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; opacity: .6; padding-bottom: 80px;}
 .comments h4 + div span {padding: 0 15px;max-width: 16.66%;}
+.reviews span{transition: all 1s}
+.reviews span:hover{transform: scale(1.2);}
+
+
 
 .blue-block {padding: 90px 0 100px;background: linear-gradient(to top, #f39c12, #f9b74e);background: -webkit-linear-gradient(bottom, #f39c12, #f9b74e);color: #fff;}
 .blue-block .img-responsive {margin: 0 auto;}
