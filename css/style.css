@@ -18,7 +18,8 @@ h4 {color: #1f2229;font: 24px 'Open Sans';margin-bottom: 20px; text-align: cente
 
 
 
-.container-fluid {max-width: 1170px; display: flex; flex-direction: column; align-items: center;}
+.container-fluid {max-width: 1170px; display: flex; flex-direction: column; /*align-items: center;*/}
+.hero { align-items: center;}
 .navbar-toggle {border: 1px solid #333; margin-top: 5px;}
 .navbar-toggle span {border-top: 1px solid #333;}
 .navbar-collapse {padding: 0;}
@@ -50,9 +51,12 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 
 /*=============== About US ===========================*/
 
-.banner-top-about{ background: url(../img/about2.png) center center no-repeat; height: calc(50vh - 70px); background-size: cover; }
-
-
+.banner-top-about{ background: url(../img/about2.png) center center no-repeat; height: calc(50vh - 70px); background-size: cover; display: flex; flex-direction: column; justify-content: center; position: relative;}
+.banner-top-about:before {content: '';position: absolute;top: 0;left: 0;bottom: 0;right: 0;opacity: 0.7;background-image: linear-gradient(to top,#2e3439,rgba(16, 16, 16, 0.71));}
+.container.about{display: flex; flex-direction: column; align-items: center;}
+.about-text-wrapper{display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px 0;}
+.about-text-wrapper h2{ margin: 25px;}
+.about-text-wrapper p{ margin: 10px; font-size: 1.2em}
 
 .our-features {padding: 55px 15px 30px;text-align: center;font: 13px/20px 'Open Sans';}
 .our-features .row > div {margin-bottom: 30px;}
