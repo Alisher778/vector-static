@@ -1,15 +1,15 @@
 $(document).ready(function(){
-	$(document).scroll(function(){
-		var scrollTop = $(document).scrollTop();
+	// $(document).scroll(function(){
+	// 	var scrollTop = $(document).scrollTop();
 		
-	    if(scrollTop > 100){
+	//     if(scrollTop > 100){
 	  	
-	    	$('nav').css({'background-color':'#fff', 'color': '#000'});
+	//     	$('nav').css({'background-color':'#fff', 'color': '#000'});
 	
-	    }else{
-	    	$('nav').css({'background-color':'transparent', 'color': '#fff'})
-	    }
-  	});
+	//     }else{
+	//     	$('nav').css({'background-color':'transparent', 'color': '#fff'})
+	//     }
+ //  	});
 
 
   	// ======= Animate Number ===============================================

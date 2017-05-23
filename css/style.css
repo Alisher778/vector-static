@@ -65,7 +65,19 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .animate-number{font-weight: 700; font-size: 1.5em;}
 
 
+/*============ Services ================================*/
 
+.streach{width: 100%; background-color: orange; }
+.streach.moving-type h3, .streach.moving-type p{color: #fff;}
+
+
+
+
+
+/*.footer{background-color: #f39c12; padding: 50px 15px 40px;}*/
+
+.banner-top-service{background: url(../img/services.jpg) center center no-repeat; height: calc(50vh - 70px); background-size: cover; display: flex; flex-direction: column; justify-content: center; position: relative;}
+.banner-top-service:before {content: '';position: absolute;top: 0;left: 0;bottom: 0;right: 0;opacity: 0.7;background-image: linear-gradient(to top,#2e3439,rgba(16, 16, 16, 0.71));}
 
 .our-features {padding: 55px 15px 30px;text-align: center;font: 13px/20px 'Open Sans';}
 .our-features .row > div {margin-bottom: 30px;}
