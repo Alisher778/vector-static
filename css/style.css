@@ -48,6 +48,10 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 
 
 
+/*=============== About US ===========================*/
+
+.about-us{height: calc(100vh - 70px);}
+
 
 
 .our-features {padding: 55px 15px 30px;text-align: center;font: 13px/20px 'Open Sans';}
@@ -65,8 +69,8 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 
 .banner-top {padding: 70px 0;background: url(../img/header.jpg) center center no-repeat;color: #fff; height: calc(100vh - 70px); display: flex; flex-direction: column; justify-content: center; background-size: cover;}
 /*.banner-top:before {content: ''; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-image: linear-gradient(to top,#2e3439,rgba(16, 16, 16, 0.71));  opacity: 0.6}*/
-.banner-top h2 {text-align: center;text-transform: uppercase;color: #fff;font: 700 50px/84px 'Open Sans';max-width: 900px;margin: 0 auto 50px;}
-.banner-top h2 ~ h5 {font: 20px/37px 'Open Sans';text-align: center;color: #fff;text-align: center;display: block; margin-top: 30px;}
+.banner-top h2 {text-align: center;text-transform: uppercase;color: #fff;font: 700 50px/84px 'Open Sans';max-width: 900px;margin: 0 auto 50px; text-shadow: 1px 1px 6px #000}
+.banner-top h2 ~ h5 {font: 20px/37px 'Open Sans';text-align: center;color: #fff;text-align: center;display: block; margin-top: 30px; font-size: 24px;}
 .formblocks {padding: 35px 30px 40px;background: rgb(51, 78, 103); margin-bottom: 30px;}
 .formblocks h5 {font: 700 25px/28px 'Open Sans'; padding-bottom: 20px;}
 .formblocks ul {padding-left: 5px;}
@@ -79,8 +83,8 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .get-started span {white-space: nowrap;}
 
 .comments {display: flex;flex-wrap: wrap;display: -webkit-flex;-webkit-flex-wrap: wrap;}
-.comments > div:first-child {width: 33%; position: relative;left: 67%;}
-.comments > div:last-child {width: 67%;position: relative;right: 33%;}
+/*.comments > div:first-child {width: 33%; position: relative;left: 67%;}*/
+.comments > div:last-child {width: 67%; margin: 0 auto;}
 .comments > div:last-child > div {width: 80%;margin: 0 auto;}
 .comments h2 {font: 30px/42px 'Open Sans';color: #1f2229;text-align: center;margin: 20px 0 40px;}
 .comments .row > div:nth-child(2n+1) {clear: left;}

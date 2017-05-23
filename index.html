@@ -26,7 +26,7 @@
 	</script>
 </head>
 <body  ng-app="movecalc" ng-controller="movecalController">
-	<nav class="main">
+	<nav class="main" id="home">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-3 col-md-2 col-sm-6 col-xs-9"><a href="#"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
@@ -47,10 +47,10 @@
 						</div>
 						<div class="collapse navbar-collapse" id="collapse">			
 							<ul class="nav-justified">
-								<li><a href="/" class="act">Home</a></li>
+								<li><a href="#" class="act">Home</a></li>
 								<!-- <li><a href="#">Video Estimate</a></li> -->
 								<li><a href="#">About Us</a></li>
-								<li><a href="#">Services</a></li>
+								<li><a href="#services">Services</a></li>
 								<li><a href="#">FAQ</a></li>
 								<li><a href="#">Referral</a></li>
 							</ul>
@@ -59,7 +59,7 @@
 				</div>
 			</div>
 	</nav>
-
+	
 	<div class="banner-top">
 		<div class="container-fluid">
 			<h2>Moving is strees-free with us</h2>
@@ -84,7 +84,19 @@
 			<h5>Or speak to a moving expert to get a free instant quote: <a href="tel:+12012663666"><b>201-266-3666</b></a></h5>
 		</div>
 	</div>
+	
+	<div class="container-fluid about-us">
+		<div class="container">
+			<h2>About Us</h2>
+			<p>Vector Moving has gained it’s trustworthy name by offering comprehensive moving solutions to all customers.  We treat every move with the utmost care and we provide a detailed moving plan so that customers can feel they are in good hands!
+			</p>
+			<p>
+				When it comes to moving services, especially your valuables, it is very important that you work with the best company. With experience and dedication, our company never fails to satisfy our clients with every work accomplished, thus we continue to grow in terms of rating and the number of clients referring our services. We always continue to emphasize service excellence.
+			</p>
 
+		</div>
+	</div>
+	<div id="services"></div>
 	<div class="container-fluid our-features">
 		<div class="row">
 			<div class="col-md-4">
@@ -141,7 +153,7 @@
 	</div>
 
 	<div class="comments">
-		<div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax.jpg"></div>
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax.jpg"></div> -->
 		<div>
 			<div>
 				<h2>What our customers say</h2>
@@ -202,9 +214,9 @@
 
 	<div class="blue-block">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8">
-					<img src="img/blue-block-foto.jpg" class="img-responsive" alt="">
+			<div class="row" style="display: flex; align-items: center;">
+				<div class="col-md-6">
+					<img src="img/blue-block-foto.png" class="img-responsive" alt="" style="width: 67%">
 				</div>
 				<div class="col-md-4">
 					<h2>NJ's Most Trusted Movers 5 Star Moving Company</h2>
