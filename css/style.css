@@ -56,12 +56,13 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .container.about{display: flex; flex-direction: column; align-items: center;}
 .about-text-wrapper{display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px 0;}
 .about-text-wrapper h2{ margin: 25px;}
-.about-text-wrapper p{ margin: 10px; font-size: 1.2em;}
+.about-text-wrapper p{ margin: 10px; font-size: 1.2em; width: 84%;}
 .container.about h2{color: #fff; z-index: 1; margin-bottom: 90px;}
 .achievments{display: flex; justify-content: space-between; width: 100%; margin-top: 100px}
 .achievments li{flex: 0 32%; display: flex; flex-direction: column; align-items: center;}
 .achievments img{width: 200px}
-.achievments h3{font-weight: 600}
+.achievments h3{font-weight: 600;}
+.animate-number{font-weight: 700; font-size: 1.5em;}
 
 
 
