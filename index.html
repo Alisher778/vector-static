@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="elromco/elromco.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	<script>
+		$(function($) {
+			$('.footer-logo > a:last-child').click(function() {
+				$.scrollTo(0, 500)
+			});			
+		});
+	</script>
+</head>
+<body  ng-app="movecalc" ng-controller="movecalController">
+	<nav class="main" id="home">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-2 col-sm-6 col-xs-9"><a href="#"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-md-push-6">
+					<ul class="nav-justified header-contacts hidden-xs">
+						<!-- <li><a href="tel:2012663666"><i class="fa fa-phone"></i>201-266-3666</a></li> -->
+						<li><a href="#" class="quote"><!-- <i class="fa fa-check-square-o"> </i>-->Get a Free Quote</a></li>
+					</ul>
+				</div>			
+				<div class="col-md-6 col-lg-pull-3 col-md-pull-4">
+						<div class="navbar-header ">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="collapse">			
+							<ul class="nav-justified">
+								<li><a href="#" class="act">Home</a></li>
+								<!-- <li><a href="#">Video Estimate</a></li> -->
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="referral.html">Referral</a></li>
+							</ul>
+						</div>
+					</div>				
+				</div>
+			</div>
+	</nav>
+	
+	<div class="banner-top">
+		<div class="container-fluid hero">
+			<h2>Moving is strees-free with us</h2>
+			<div class="row">
+				<!-- <div class="col-sm-5"><ultrasmall-form></ultrasmall-form></div>
+				<div class="col-sm-7">
+					<div class="formblocks">
+						<h5>#1 Reliable Movers in New Jersey</h5>
+						<ul>
+							<li>Starting at $89 per hour. Get a Reliable Moving Experience </li>
+							<li>Don’t just take our word for it…hear from our customers on</li>
+							<li>Professional moving services for any move sizes</li>
+							<li>Guaranteed All Inclusive Prices. No Hidden Fees</li>
+						</ul>
+					</div>
+				</div> -->
+				<a href="#" class="get-quote animated pulse infinite">
+					<h3 class="">Get Your Quote Now</h3>
+				</a>
+			</div>
+
+			<h5>Or speak to a moving expert to get a free instant quote: <a href="tel:+12012663666"><b>201-266-3666</b></a></h5>
+		</div>
+	</div>
+	
+	<div id="services"></div>
+	<div class="container-fluid our-features">
+		<div class="row">
+			<div class="col-md-4">
+				<span><img src="img/our-features-1.png" alt=""></span>
+				<h4>Reliable Service</h4>
+				<p>Our movers are friendly, fast and professional. Always on time and ready to help with your upcoming move</p>
+			</div>
+			<div class="col-md-4">
+				<span><img src="img/our-features-2.png" alt=""></span>
+				<h4>No Hidden Fees</h4>
+				<p>Like you, we hate hidden fees. We offer all inclusive guaranteed rates. Its simple - your quote is your price</p>
+			</div>
+			<div class="col-md-4">
+				<span><img src="img/our-features-3.png" alt=""></span>
+				<h4>Customer Satisfaction</h4>
+				<p>Our support staff is always here to help you. Vector team is looking forward to assisting you with your move</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="moving-type">
+		<div class="container-fluid">
+			<h3>VECTOR. SMART WAY TO MOVE</h3>
+			<p>25 years of combined experience. New Jersey's favorite mover! Either across the street or anywhere in east cost - let the professionals handle it.</p>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<span><i class="fa fa-truck"></i></span>
+					<h4>Local Moving</h4>
+					<p>From movers and packers to unloading and storage our professional local movers are always here to help you</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<span><i class="fa fa-map-marker"></i></span>
+					<h4>Long Distance Moving</h4>
+					<p>You can trust our long distance movers when you plan to move anywhere in the east cost. We offer express deliveries</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<span><i class="fa fa-home"></i></span>
+					<h4>Residential Moving</h4>
+					<p>House moving is a stress-full process. Our professional local house movers are trained to make the moving easy</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<span><i class="fa fa-archive"></i></span>
+					<h4>Commercial Moving</h4>
+					<p>Your business can count on our office movers while you are growing. We have enough manpower for any move sizes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="get-started">
+		<div class="container-fluid">
+			<span>Move with confidence.</span> <span>Get started today!</span> <a href="#" class="quote">Get Started Now</a>
+		</div>
+	</div>
+
+	<div class="comments">
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax.jpg"></div> -->
+		<div>
+			<div>
+				<h2>What our customers say</h2>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="comment-item">
+							<img src="img/comment-1.jpg" alt="">
+							<div>
+								<p>"These guys rocked. They were the lowest price estimate, great with communication (responsive, thorough, no surprises), and moved us quickly on the hottest day of the year. "</p>
+								<span>- Benjamin R.</span>
+								<address>Jersey City, NJ</address>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="comment-item">
+							<img src="img/comment-2.jpg" alt="">
+							<div>
+								<p>"Wow, I didn't know moving could be such a positive experience. Romeo and his team did a fantastic job, and on a day with miserable rainy and windy weather."</p>
+								<span>- John J.</span>
+								<address>Hoboken, NJ</address>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="comment-item">
+							<img src="img/comment-3.jpg" alt="">
+							<div>
+								<p>"HIGHLY recommend this moving moving company! Their initial email was very thorough and there were no surprise fees. They carefully disassembled and wrapped all of my furniture in no time!"</p>
+								<span>- Katherine C.</span>
+								<address>Weehawken, NJ</address>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="comment-item">
+							<img src="img/comment-4.jpg" alt="">
+							<div>
+								<p>"NJ Movers is fast, efficient at a surprisingly low cost! Our movers, Bara and crew did an amazing job. I am very pleased with how carefully and QUICKLY they worked. I HIGHLY recommend!!!!"</p>
+								<span>- Kelly K.</span>
+								<address>Fort Lee, NJ</address>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>We are featured on</h4>
+				<div class="reviews">
+					<span><img src="img/brand-1.png" alt="" class="img-responsive"></span>
+					<span><a href=""></a><img src="img/brand-2.png" alt="" class="img-responsive"></span>
+					<span><a href="https://www.angieslist.com/"><img src="img/brand-3.png" alt="" class="img-responsive"></a></span>
+					<span><img src="img/brand-4.png" alt="" class="img-responsive"></span>
+					<span><a href="http://www.homeadvisor.com/rated.VectorMovingLLC.50981528.html"><img src="img/brand-5.jpg" alt="" class="img-responsive"></a></span>
+					<span><a href="https://www.yelp.com/biz/nj-vector-movers-jersey-city" target="blank"><img src="img/brand-6.png" alt="" class="img-responsive"></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="blue-block">
+		<div class="container-fluid">
+			<div class="row" style="display: flex; align-items: center;">
+				<div class="col-md-6">
+					<img src="img/blue-block-foto.png" class="img-responsive" alt="" style="width: 67%">
+				</div>
+				<div class="col-md-4">
+					<h2>NJ's Most Trusted Movers 5 Star Moving Company</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+				</div>
+			</div>
+			<div class="row our-strengths">
+				<div class="col-md-4">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+					<div>
+						<h5>Fully licensed and insured</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt dolore magna aliquyam</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+					<div>
+						<h5>Our own clean trucks</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt dolore magna aliquyam</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+					<div>
+						<h5>Awesome customer support</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt dolore magna aliquyam</p>
+					</div>
+				</div>
+			</div>
+			<div class="row price">
+				<div class="col-md-8">
+					<p>Exceptional moving experience for a price you can afford. You will love our support!</p>
+				</div>
+				<div class="col-md-4"><a href="#">Get a Free Instant Quote</a></div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 footer-logo">
+				<a href="#"><img src="img/logo.png" class="img-responsive" alt=""></a>
+				<div class="sots">
+					<a href="#"><i class="fa fa-yelp"></i></a>
+					<a href="#"><i class="fa fa-linkedin-square"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fa fa-facebook-f"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+				<a href="#">Comments/Complaints</a>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<div class="h5">Our Company</div>
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<div class="h5">Resources</div>
+				<ul>
+					<li><a href="#">Moving Tips</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Low Price Guarantee</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<div class="h5">Service Areas</div>
+				<ul>
+					<li><a href="#">Movers NYC</a></li>
+					<li><a href="#">Movers NJ</a></li>
+					<li><a href="#">Hoboken Movers</a></li>
+					<li><a href="#">Edgewater Movers</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="h5">Contacts</div>
+				<ul>
+					<li><p>1812 Front Street</p></li>
+					<li><p>Scotch Plains, NJ 07076</p></li>
+					<li><p>tel: 201-273-9500</p></li>
+					<li><p><a href="mailto:info@myvectormoving.com">info@myvectormoving.com</a></p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<p>© 2017 Vector Moving LLC. - New Jersey</p>
+			<p>US DOT # 2567815 | NJ DOT # 39PM00112900 </p>
+		</div>
+	</footer>
+
+	<div class="bottom-tel"><a href="tel:2012663666"><i class="fa fa-phone"></i>201-266-3666</a></div>
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- <script src="elromco/app.import.js"></script>
+	<script src="elromco/company/app.module.js"></script>
+	<script src="elromco/moment.js"></script> -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAqJtLkKqgyjyL7sV-5gQbKC_IBfJV2Ge0"></script>	
+</body>
+</html>
