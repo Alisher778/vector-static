@@ -110,7 +110,9 @@ fieldset button{position: relative; buttom: 10px;}
 .input-group-addon{background-color: orange; color:#fff;}
 
 
-
+#form-location{display: none;}
+.select-type{display: flex; justify-content: center; align-items: center;}
+.building{flex: 0 32%;}
 
 
 

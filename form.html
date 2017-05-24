@@ -87,7 +87,7 @@
 				<img src="img/truck.png" alt="" class="truck">
 				<img src="img/map.png" alt="" class="img-responsive">
 			</div>
-			<fieldset class="col-sm-6 col-md-8 form-field">
+			<fieldset class="col-sm-6 col-md-8 form-field" id="form-location">
 				<h2>Pick-up Address</h2>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon glyphicon glyphicon-map-marker"></span>
@@ -114,8 +114,27 @@
 				    <input type="text" placeholder="Country *" class="form-control" id="country" required>
 				</p>
 				<p><button type="button" class="btn btn-secondary btn-lg pull-right">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
+			</fieldset>
+			<fieldset class="col-sm-6 col-md-8 form-field" id="form-type">
+				<div class="select-type">
+					<div class="building">
+						<img src="" alt="">
+						<input type="radio"  value="Apartment" checked name="apartment">
+						<button>Apartment</button>
+					</div>
+					<div class="building">
+						<img src="" alt="">
+						<input type="radio"  value="Apartment" checked name="apartment">
+						<button>House</button>
+					</div>
+					<div class="building">
+						<img src="" alt="">
+						<input type="radio"  value="Apartment" checked name="apartment">
+						<button>Office</button>
+					</div>
+					
+				</div>
 				
-
 			</fieldset>
 		</form>
 	</div>
