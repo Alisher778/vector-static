@@ -1,17 +1,5 @@
 $(document).ready(function(){
-	// $(document).scroll(function(){
-	// 	var scrollTop = $(document).scrollTop();
-		
-	//     if(scrollTop > 100){
-	  	
-	//     	$('nav').css({'background-color':'#fff', 'color': '#000'});
 	
-	//     }else{
-	//     	$('nav').css({'background-color':'transparent', 'color': '#fff'})
-	//     }
- //  	});
-
-
   	// ======= Animate Number ===============================================
 
 
@@ -25,4 +13,51 @@ $(document).ready(function(){
 	    }
 	  });
 	});
+
+	// form image map truck animation =======================================
+	$('#street').focus(function(){
+		var horn = $('#horn')[0];
+		$('.truck').animate({'top':'16%', right: '20%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(0deg)"})
+		});
+		horn.play();
+	});
+
+	$('#apt').focus(function(){
+		var horn = $('#horn')[0];
+		$('.truck').animate({'top': '42%', 'right': '20%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(180deg)"})
+		});
+	});
+
+	$('#zip').focus(function(){
+		var horn = $('#horn')[0];
+		$('.truck').animate({'top': '42%', 'right': '68%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(180deg)"})
+		});
+	});
+
+	$('#city').focus(function(){
+		var horn = $('#horn')[0];
+		$('.truck').animate({'top': '60%', 'right': '68%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(0deg)"})
+		});
+	});
+
+	$('#state').focus(function(){
+		var horn = $('#horn')[0];
+		$('.truck').animate({'top': '60%', 'right': '20%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(0deg)"})
+		});
+	});
+
+
+	$('#country').focus(function(){
+		console.log('hello')
+		var horn = $('#horn')[0];
+		$('.truck').animate({'top': '89%', 'right': '60%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(180deg)"})
+		});
+		horn.play();
+	})
 })

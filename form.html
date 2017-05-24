@@ -16,7 +16,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<script src="js/parallax.min.js"></script>
-	<!-- <script src="js/main.js"></script> -->
+	<script src="js/main.js"></script>
 	<script>
 		$(function($) {
 			$('.footer-logo > a:last-child').click(function() {
@@ -102,37 +102,39 @@
 		</ul>
 
 		<form action="" class="col-sm-10 col-md-12">
+		<audio src="js/horn.mp3" id="horn"></audio>
 			<div class="col-sm-4 col-md-4 img-area">
-				<img src="img/truck.png" alt="" class="img responsive truck">
+				<img src="img/truck.png" alt="" class="truck">
 				<img src="img/map.png" alt="" class="img-responsive">
 			</div>
 			<fieldset class="col-sm-6 col-md-8 form-field">
 				<h2>Pick-up Address</h2>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1">@</span>
+					<span class="input-group-addon glyphicon glyphicon-map-marker" id="sizing-addon1"></span>
 				    <input type="text" placeholder="Street Address" class="form-control" id="street">
 				</p>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1">@</span>
-				    <input type="text" placeholder="Apt/suit number" class="form-control">
+					<span class="input-group-addon glyphicon glyphicon-home" id="sizing-addon1"></span>
+				    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt">
 				</p>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1">@</span>
+					<span class="input-group-addon glyphicon glyphicon-tags" id="sizing-addon1"></span>
 				    <input type="text" placeholder="Zip Code" class="form-control" id="zip">
 				</p>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1">@</span>
+					<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-building-o" aria-hidden="true"></i></span>
 				    <input type="text" placeholder="City" class="form-control" id="city">
 				</p>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1">@</span>
+					<span class="input-group-addon " id="sizing-addon1"><i class="fa fa-university" aria-hidden="true"></i></span>
 				    <input type="text" placeholder="State" class="form-control" id="state">
 				</p>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1">@</span>
+					<span class="input-group-addon glyphicon glyphicon-flag" id="sizing-addon1"></span>
 				    <input type="text" placeholder="Country" class="form-control" id="country">
 				</p>
-				<button>Next</button>
+				<p><button type="button" class="btn btn-secondary btn-lg pull-right">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
+				
 
 			</fieldset>
 		</form>
@@ -196,22 +198,6 @@
 	<div class="bottom-tel"><a href="tel:2012663666"><i class="fa fa-phone"></i>201-266-3666</a></div>
 	
 	<link rel="stylesheet" href="css/animate.css">
-	<script src="js/jquery.liveaddress.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/3.4/jquery.liveaddress.min.js"></script>
-	<script>var liveaddress = $.LiveAddress({
-		key: "16729846955001683",
-		debug: true,
-		target: "US",
-		addresses: [{
-			address1: '#street',
-			locality: '#city',
-			administrative_area: '#state',
-			postal_code: '#zip',
-			country: '#country'
-		}]
-	});
-</script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAqJtLkKqgyjyL7sV-5gQbKC_IBfJV2Ge0"></script>	
 </body>
 </html>

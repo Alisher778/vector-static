@@ -104,8 +104,10 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .stage li span.active{background-color: orange; padding: 30px 40px; border-radius: 43px; border: 1px solid; font-size: 1.5em; font-weight: 900;}
 .img-area{position: relative; }
 .truck{ position: absolute; z-index: 2; width: 24%; top: 15%;}
-fieldset{display: flex; flex-direction: column;}
-
+fieldset{display: flex; flex-direction: column; position: relative;}
+fieldset button{position: relative; buttom: 10px;}
+.btn-group-lg>.btn, .btn-lg{background-color: orange; padding: 15px 30px;}
+.form-wrap span{background-color: orange; color:#fff;}
 
 
 
