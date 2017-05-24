@@ -109,10 +109,14 @@ fieldset button{position: relative; buttom: 10px;}
 .btn-group-lg>.btn, .btn-lg{background-color: orange; padding: 15px 30px;}
 .input-group-addon{background-color: orange; color:#fff;}
 
-
+/*===>>>> Location form*/
 #form-location{display: none;}
+.location-img{display: none;}
+
+/*===>>>> Building Type form*/
 .select-type{display: flex; justify-content: center; align-items: center;}
-.building{flex: 0 32%;}
+.building{flex: 0 32%; display: flex; flex-direction: column; align-items: center; position: relative;}
+.building input{opacity: 0; position: absolute;}
 
 
 
