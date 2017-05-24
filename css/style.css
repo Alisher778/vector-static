@@ -105,8 +105,9 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .img-area{position: relative; }
 .truck{ position: absolute; z-index: 2; width: 24%; top: 15%;}
 fieldset{display: flex; flex-direction: column; position: relative;}
-fieldset button{position: relative; buttom: 10px;}
-.btn-group-lg>.btn, .btn-lg{background-color: orange; padding: 15px 30px;}
+fieldset button{position: relative; buttom: 10px; width: 90%;}
+fieldset button.active{background-color: color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+.btn-group-lg>.btn, .btn-lg{background-color: orange; padding: 15px 30px; }
 .input-group-addon{background-color: orange; color:#fff;}
 
 /*===>>>> Location form*/
@@ -117,6 +118,7 @@ fieldset button{position: relative; buttom: 10px;}
 .select-type{display: flex; justify-content: center; align-items: center;}
 .building{flex: 0 32%; display: flex; flex-direction: column; align-items: center; position: relative;}
 .building input{opacity: 0; position: absolute;}
+.building button{background-color: #fff; color: orange; border: 1px solid orange;}
 
 
 
