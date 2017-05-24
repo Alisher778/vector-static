@@ -16,7 +16,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<script src="js/parallax.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
 	<script>
 		$(function($) {
 			$('.footer-logo > a:last-child').click(function() {
@@ -33,7 +33,7 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 col-md-push-6">
 					<ul class="nav-justified header-contacts hidden-xs">
 						<!-- <li><a href="tel:2012663666"><i class="fa fa-phone"></i>201-266-3666</a></li> -->
-						<li><a href="form.html" class="quote"><!-- <i class="fa fa-check-square-o"> </i>-->Get a Free Quote</a></li>
+						<li><a href="#" class="quote"><!-- <i class="fa fa-check-square-o"> </i>-->Get a Free Quote</a></li>
 					</ul>
 				</div>			
 				<div class="col-md-6 col-lg-pull-3 col-md-pull-4">
@@ -47,7 +47,7 @@
 						</div>
 						<div class="collapse navbar-collapse" id="collapse">			
 							<ul class="nav-justified">
-								<li><a href="index.html" class="act">Home</a></li>
+								<li><a href="#" class="act">Home</a></li>
 								<!-- <li><a href="#">Video Estimate</a></li> -->
 								<li><a href="about.html">About Us</a></li>
 								<li><a href="services.html">Services</a></li>
@@ -61,36 +61,78 @@
 	</nav>
 	
 	<div class="banner-top-about">
-		<div class="container-fluid">
-			<div class="container about">
-				<h2>Welcome to NJ’s finest moving company!</h2>
-				<a href="form.html" class="get-quote animated pulse infinite">
+		<div class="container-fluid hero">
+			<h2>Moving is strees-free with us</h2>
+			<div class="row">
+				<!-- <div class="col-sm-5"><ultrasmall-form></ultrasmall-form></div>
+				<div class="col-sm-7">
+					<div class="formblocks">
+						<h5>#1 Reliable Movers in New Jersey</h5>
+						<ul>
+							<li>Starting at $89 per hour. Get a Reliable Moving Experience </li>
+							<li>Don’t just take our word for it…hear from our customers on</li>
+							<li>Professional moving services for any move sizes</li>
+							<li>Guaranteed All Inclusive Prices. No Hidden Fees</li>
+						</ul>
+					</div>
+				</div> -->
+				<a href="#" class="get-quote animated pulse infinite">
 					<h3 class="">Get Your Quote Now</h3>
 				</a>
 			</div>
+
+			<h5>Or speak to a moving expert to get a free instant quote: <a href="tel:+12012663666"><b>201-266-3666</b></a></h5>
 		</div>
 	</div>
-	<div class="container-fluid about-us">
-		<div class="container">
-			<div class="about-text-wrapper">
-				<h2>About Us</h2>
-				<p>Vector Moving has gained it’s trustworthy name by offering comprehensive moving solutions to all customers.  We treat every move with the utmost care and we provide a detailed moving plan so that 	customers can feel they are in good hands!
-				</p>
-				<p>
-					When it comes to moving services, especially your valuables, it is very important that you work with the best company. With experience and dedication, our company never fails to satisfy our clients with every work accomplished, thus we continue to grow in terms of rating and the number of clients referring our services. We always continue to emphasize service excellence.
-				</p>
+	
+	<div class="container form-wrap">
+		<ul class="stage">
+			<li class="col-sm-6 col-md-4">
+				<span>1</span>
+				<h1>Location</h1>
+			</li>
+			<li class="col-sm-6 col-md-4">
+				<span>2</span>
+				<h1>Building Type</h1>
+			</li>
+			<li class="col-sm-6 col-md-4">
+				<span>3</span>
+				<h1>Conatct Info</h1>
+			</li>
+		</ul>
 
-				
-
-				<ul class="achievments">
-					<li><h3>Boxes Moved</h3><img src="img/boxes.png" class="img-responsive" alt=""><span class="animate-number">34500</span></li>
-					<li><h3>Miles Traveled</h3><img src="img/travel.png" class="img-responsive" alt=""><span class="animate-number">152000</span></li>
-					<li><h3>Satisfied Customers</h3><img src="img/smile.png" class="img-responsive" alt=""><span class="animate-number">1650</span></li>
-				</ul>
+		<form action="" class="col-sm-10 col-md-12">
+			<div class="col-sm-4 col-md-4 img-area">
+				<img src="img/truck.png" alt="" class="img responsive truck">
+				<img src="img/map.png" alt="" class="img-responsive">
 			</div>
-		</div>
-	</div>
+			<fieldset class="col-sm-6 col-md-8 form-field">
+				<h2>Pick-up Address</h2>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon" id="sizing-addon1">@</span>
+				    <input type="text" placeholder="Street Address" class="form-control">
+				</p>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon" id="sizing-addon1">@</span>
+				    <input type="text" placeholder="Apt/suit number" class="form-control">
+				</p>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon" id="sizing-addon1">@</span>
+				    <input type="text" placeholder="Zip Code" class="form-control">
+				</p>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon" id="sizing-addon1">@</span>
+				    <input type="text" placeholder="City" class="form-control">
+				</p>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon" id="sizing-addon1">@</span>
+				    <input type="text" placeholder="State" class="form-control">
+				</p>
+				<button>Next</button>
 
+			</fieldset>
+		</form>
+	</div>
 	<footer class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 footer-logo">
@@ -150,9 +192,9 @@
 	<div class="bottom-tel"><a href="tel:2012663666"><i class="fa fa-phone"></i>201-266-3666</a></div>
 	
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- <script src="elromco/app.import.js"></script> -->
-	<!-- <script src="elromco/company/app.module.js"></script> -->
-	<!-- <script src="elromco/moment.js"></script> -->
+	<!-- <script src="elromco/app.import.js"></script>
+	<script src="elromco/company/app.module.js"></script>
+	<script src="elromco/moment.js"></script> -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAqJtLkKqgyjyL7sV-5gQbKC_IBfJV2Ge0"></script>	
 </body>
 </html>

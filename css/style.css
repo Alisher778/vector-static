@@ -91,6 +91,22 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .faq-wrap .list-group-item{margin: 17px 0; padding: 16px 15px}
 
 
+/*========= Form ======================================*/
+
+.stage{margin: 45px 0;}
+.form-wrap form{margin-top: 50px; display: flex; align-items: center;}
+.img-area{flex: 0 33%;}
+.form-field{ text-align: center; }
+.form-field .input-group{margin: 20px 0;}
+.stage li{display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative;}
+/*.stage li:nth-child(-n+2):after{position: absolute; right: -43%; top: 30%; width: 100%; z-index: -1;height: 5px; background-color: black;}*/
+.stage li span{background-color: orange; padding: 30px 40px; border-radius: 43px; border: 1px solid; font-size: 1.5em; font-weight: 900;}
+.stage li span.active{background-color: orange; padding: 30px 40px; border-radius: 43px; border: 1px solid; font-size: 1.5em; font-weight: 900;}
+.img-area{position: relative; }
+.truck{ position: absolute; z-index: 2; width: 24%; top: 15%;}
+fieldset{display: flex; flex-direction: column;}
+
+
 
 
 
