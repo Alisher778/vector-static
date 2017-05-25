@@ -118,7 +118,7 @@
 			</fieldset>
 			<fieldset class="col-sm-8 col-md-8 form-field" id="form-type">
 				<div class="select-type">
-					<div class="building">
+					<div class="building selected">
 						<img src="img/apt.png" alt="" class="img-responsive">
 						<input type="radio"  value="Apartment" checked >
 						<button class="btn btn-lg btn-primary active">Apartment</button>
@@ -133,9 +133,52 @@
 						<input type="radio"  value="Apartment">
 						<button class="btn btn-lg btn-primary">Office</button>
 					</div>
-					
 				</div>
-				
+				<div class="elevator-stair">
+					<div class="elevtaor">
+						<h4>Elevator</h4>
+						<div>
+							<input type="radio" value="yes" checked class="yes">
+							<input type="radio" value="no" class="no">
+						</div>
+					</div>
+					<div class="stair">
+						<h4>Stairs</h4>
+						<div>
+							<input type="radio" value="yes" class="yes">
+							<input type="radio" value="no" class="no" checked>
+						</div>
+					</div>
+				</div>
+				<div class="floor">
+					<h4>Select Flights of Stairs</h4>
+					<select name="" id="" >
+						<option value="1">1st</option>
+						<option value="2">2nd</option>
+						<option value="3">3rd</option>
+						<option value="3">3rd</option>
+						<option value="4">4th</option>
+						<option value="5">5th</option>
+						<option value="6">6th</option>
+						<option value="7">7th</option>
+					</select>
+				</div>
+				<div class="bedroom-number">
+					<h4>Select Numbers of Bedrooms</h4>
+					<select name="" id="">
+						<option value="studio">Studio</option>
+						<option value="1">1 Bedroom</option>
+						<option value="2">2 Bedroom</option>
+						<option value="3">3 Bedroom</option>
+						<option value="4">4 Bedroom</option>
+						<option value="5">5 Bedroom</option>
+						<option value="6">6 Bedroom</option>
+					</select>
+				</div>
+				<div class="date">
+					<h4>Choose the Date of Move</h4>
+					<input type="date" value="Choose the date">
+				</div>
 			</fieldset>
 		</form>
 	</div>
