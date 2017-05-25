@@ -81,7 +81,7 @@
 			</li>
 		</ul>
 
-		<form action="" class="col-sm-10 col-md-12" name="myform" >
+		<form action="" class="col-sm-10 col-md-12" name="myform" id="quote-form">
 		<audio src="js/horn.mp3" id="horn"></audio>
 			<div class="col-sm-4 col-md-4 img-area">
 				<img src="img/truck.png" alt="" class="truck location-img">
@@ -91,46 +91,43 @@
 			<article class="col-sm-8 col-md-8 form-field" id="form-location">
 				<h2>Pick-up Address</h2>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon glyphicon glyphicon-map-marker"></span>
+					<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
 				    <input type="text" placeholder="Street Address *" class="form-control" id="street" required>
 				</p>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon glyphicon glyphicon-home"></span>
-				    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt">
-				</p>
-				<p class="input-group input-group-lg">
-					<span class="input-group-addon glyphicon glyphicon-tags"></span>
-				    <input type="number" placeholder="Zip Code *" class="form-control" id="zip" required max="5">
+				    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt" name="apartment">
 				</p>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
-				    <input type="text" placeholder="City *" class="form-control" id="city" required>
+				    <input type="text" placeholder="City *" class="form-control" id="city" required name="city">
 				</p>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
-				    <input type="text" placeholder="State *" class="form-control" id="state" required>
+				    <input type="text" placeholder="State *" class="form-control" id="state" required name="state">
 				</p>
 				<p class="input-group input-group-lg">
-					<span class="input-group-addon glyphicon glyphicon-flag"></span>
-				    <input type="text" placeholder="Country *" class="form-control" id="country" required>
+					<span class="input-group-addon glyphicon glyphicon-tags"></span>
+				    <input type="number" placeholder="Zip Code *" class="form-control" id="zip" required max="5" name="zip-code">
 				</p>
+				
 				<p><button type="button" class="btn btn-secondary btn-lg next">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
 			</article>
 			<article class="col-sm-8 col-md-8 col-md-offset-2 form-field" id="form-type">
 				<div class="select-type">
 					<div class="building selected">
 						<img src="img/apt.png" alt="" class="img-responsive">
-						<input type="radio"  value="Apartment" checked >
+						<input type="radio"  value="Apartment" checked name="type-apt">
 						<button class="btn btn-lg btn-primary active">Apartment</button>
 					</div>
 					<div class="building">
 						<img src="img/house.png" alt="" class="img-responsive">
-						<input type="radio"  value="Apartment">
+						<input type="radio"  value="Apartment" name="type-house">
 						<button class="btn btn-lg btn-primary">House</button>
 					</div>
 					<div class="building">
 						<img src="img/office.png" alt="" class="img-responsive">
-						<input type="radio"  value="Apartment">
+						<input type="radio"  value="Apartment" name="type-office">
 						<button class="btn btn-lg btn-primary">Office</button>
 					</div>
 				</div>
@@ -138,21 +135,21 @@
 					<div class="elevtaor">
 						<h4>Elevator</h4>
 						<div>
-							<input type="radio" value="yes" checked class="yes">
-							<input type="radio" value="no" class="no">
+							<input type="radio" value="yes" checked class="yes" name="el-yes">
+							<input type="radio" value="no" class="no" name="el-no">
 						</div>
 					</div>
 					<div class="stair">
 						<h4>Stairs</h4>
 						<div>
-							<input type="radio" value="yes" class="yes">
-							<input type="radio" value="no" class="no" checked>
+							<input type="radio" value="yes" class="yes" name="stair-yes">
+							<input type="radio" value="no" class="no" checked name="stair-no">
 						</div>
 					</div>
 				</div>
 				<div class="floor">
 					<h4>Select Flights of Stairs</h4>
-					<select name="" id="" >
+					<select name="num-stairs" id="" >
 						<option value="1">1st</option>
 						<option value="2">2nd</option>
 						<option value="3">3rd</option>
@@ -165,7 +162,7 @@
 				</div>
 				<div class="bedroom-number">
 					<h4>Select Numbers of Bedrooms</h4>
-					<select name="" id="">
+					<select name="num-bedrooms" id="">
 						<option value="studio">Studio</option>
 						<option value="1">1 Bedroom</option>
 						<option value="2">2 Bedroom</option>
@@ -177,7 +174,7 @@
 				</div>
 				<div class="date">
 					<h4>Choose the Date of Move</h4>
-		             <input type='date' class="form-control" />
+		             <input type='date' class="form-control" name="date"/>
 				</div>
 				<p class="back-next-btn">
 					<button type="button" class="btn btn-secondary btn-lg next">NEXT
@@ -191,18 +188,18 @@
 				<h2>Contact Information</h2>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-				    <input type="text" placeholder="Name *" class="form-control" id="street" required>
+				    <input type="text" placeholder="Name *" class="form-control" id="name" required name="name">
 				</p>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-				    <input type="email" placeholder="Email *" class="form-control" id="apt">
+				    <input type="email" placeholder="Email *" class="form-control" id="email" name="email">
 				</p>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-				    <input type="number" placeholder="Number *" class="form-control" id="zip" required >
+				    <input type="tel" placeholder="Number *" class="form-control" id="tel" required  name="tel">
 				</p>
 		
-				<p><button type="submit" class="btn btn-secondary btn-lg submit-btn" style="color: #fff; background-color: #4caf50">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>	
+				<p><button type="submit" class="btn btn-secondary btn-lg submit-btn" style="color: #fff; background-color: #4caf50">SUBMIT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>	
 			</article>
 		</form>
 	</div>
@@ -263,7 +260,6 @@
 	</footer>
 
 	<div class="bottom-tel"><a href="tel:2012663666"><i class="fa fa-phone"></i>201-266-3666</a></div>
-	
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAqJtLkKqgyjyL7sV-5gQbKC_IBfJV2Ge0"></script>	
 </body>

@@ -85,7 +85,7 @@ $(document).ready(function(){
 			$('.message').fadeOut(4000)
 		// }
 		
-	})
+	});
 
 	$('#form-type button.next').click(function(){
 		var value;
@@ -108,8 +108,67 @@ $(document).ready(function(){
 			$('.message').fadeOut(4000)
 		// }
 		
-	})
+	});
 
+// ====================== Phone Number Validation ==========================
+	 $("input[type=tel]").on("change keyup paste", function () {
+	    var output;
+	    var input = $(this).val();
+	    input = input.replace(/[^0-9]/g, '');
+	    var area = input.substr(0, 3);
+	    var pre = input.substr(3, 3);
+	    var tel = input.substr(6, 4);
+	    if (area.length < 3) {
+	        output = "(" + area;
+	    } else if (area.length == 3 && pre.length < 3) {
+	        output = "(" + area + ")" + " " + pre;
+	    } else if (area.length == 3 && pre.length == 3) {
+	        output = "(" + area + ")" + " " + pre + "-" + tel;
+	    }
+	    $(this).val(output);
+	});
+//  ============================================================================
+
+
+//  ===================== Data for Table   ===============================
+
+$('form#quote-form :input').on("change keyup paste", function(){
+	// Conatct info
+
+		var $email = $('#email').val();
+		var $tel = $('#tel').val();
+		var $name = $('#name').val();
+	// Location
+		var $email = $('#email').val();
+		var $tel = $('#tel').val();
+		var $name = $('#name').val();
+
+	var data = {name: $name, 
+				email: $email,
+				tel: $tel
+				}
+				console.log(data);
+})
+
+
+
+	$('.submit-btn').click(function(){
+		var value;
+		$('#form-info input').each(function(){
+			if($(this).val() != ''){
+				value = true;
+			}else{
+				value = false;
+			}
+			return value;
+		})
+		if(value){
+			console.log('Success')
+		}else{
+			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
+			$('.message').fadeOut(4000)
+		}
+	})
 
 
 
