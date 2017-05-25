@@ -104,9 +104,9 @@ nav.main .navbar-collapse a:hover {text-decoration: none;color: rgb(231, 76, 60)
 .stage li span.active{background-color: orange; color: #fff; padding: 20px 30px; border-radius: 43px; border: 1px solid; font-size: 1.5em; font-weight: 900;}
 .img-area{position: relative; }
 .truck{ position: absolute; z-index: 2; width: 24%; top: 15%;}
-fieldset{display: flex; flex-direction: column; position: relative;}
-fieldset button{position: relative; buttom: 10px; width: 90%;}
-fieldset button.active{background-color: color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+article{display: flex; flex-direction: column; position: relative;}
+article button{position: relative; buttom: 10px; width: 90%;}
+article button.active{background-color: color: #fff; background-color: #337ab7; border-color: #2e6da4;}
 .btn-group-lg>.btn, .btn-lg{background-color: orange; padding: 15px 30px; }
 .input-group-addon{background-color: orange; color:#fff;}
 
@@ -114,10 +114,10 @@ fieldset button.active{background-color: color: #fff; background-color: #337ab7;
 #form-location{display: ;}
 .location-img{display: ;}
 button.next{width: 200px;}
-
+.message{position: absolute; top: 10px; right: 20px; background-color: red; padding: 18px 40px; color: #fff; z-index: 3; font-size: 44px; border-radius: 11px;}
 /*===>>>> Building Type form*/
 
-fieldset#form-type{display: none}
+article#form-type{display: none}
 .type-img{display: none;}
 
 .select-type{display: flex; justify-content: center; align-items: center;}
@@ -140,8 +140,7 @@ input[type=radio].no:after{content: "No"}
 .floor, .bedroom-number, .date{margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px;}
 .floor select, .bedroom-number select, .date select{width: 80%; background-color: #fff; border: 2px solid orange; font-size: 20px; height: 50px; outline: none;}
 .date input[type=date]{border: 2px solid orange; height: 50px; width: 80%; font-size: 20px; margin: 0 auto;}
-.back-next-btn{display: flex; justify-content: flex-start;}
-.back-next-btn button{display: flex; justify-content: flex-start; margin-top: 40px; width: 150px; align-items: center;}
+.back-next-btn button{margin-top: 40px;}
 .back-next-btn button:nth-child(2){margin-left: auto;}
 
 #form-info{display: none;}

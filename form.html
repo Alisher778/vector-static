@@ -68,27 +68,27 @@
 	<div class="container form-wrap">
 		<ul class="stage">
 			<li class="col-sm-6 col-md-4">
-				<span class="active">1</span>
+				<span class="span1 active">1</span>
 				<h3>Location</h3>
 			</li>
 			<li class="col-sm-6 col-md-4">
-				<span>2</span>
+				<span class="span2">2</span>
 				<h3>Building Type</h3>
 			</li>
 			<li class="col-sm-6 col-md-4">
-				<span>3</span>
+				<span class="span3">3</span>
 				<h3>Conatct Info</h3>
 			</li>
 		</ul>
 
-		<form action="" class="col-sm-10 col-md-12" name="myform" novalidate>
+		<form action="" class="col-sm-10 col-md-12" name="myform" >
 		<audio src="js/horn.mp3" id="horn"></audio>
 			<div class="col-sm-4 col-md-4 img-area">
 				<img src="img/truck.png" alt="" class="truck location-img">
 				<img src="img/map.png" alt="" class="img-responsive location-img">
 				<img src="img/city.png" alt="" class="img-responsive type-img">
 			</div>
-			<fieldset class="col-sm-8 col-md-8 form-field" id="form-location">
+			<article class="col-sm-8 col-md-8 form-field" id="form-location">
 				<h2>Pick-up Address</h2>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon glyphicon glyphicon-map-marker"></span>
@@ -115,8 +115,8 @@
 				    <input type="text" placeholder="Country *" class="form-control" id="country" required>
 				</p>
 				<p><button type="button" class="btn btn-secondary btn-lg next">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
-			</fieldset>
-			<fieldset class="col-sm-8 col-md-8 form-field" id="form-type">
+			</article>
+			<article class="col-sm-8 col-md-8 col-md-offset-2 form-field" id="form-type">
 				<div class="select-type">
 					<div class="building selected">
 						<img src="img/apt.png" alt="" class="img-responsive">
@@ -180,17 +180,14 @@
 		             <input type='date' class="form-control" />
 				</div>
 				<p class="back-next-btn">
-					<button type="button" class="btn btn-secondary btn-lg pull-LEFT">
-						<i class="fa fa-long-arrow-left" aria-hidden="true"></i>BACK
-					</button>
-					<button type="button" class="btn btn-secondary btn-lg pull-LEFT">NEXT
+					<button type="button" class="btn btn-secondary btn-lg next">NEXT
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 					</button>
 
 				</p>
 				
-			</fieldset>
-			<fieldset class="col-sm-8 col-md-8 form-field" id="form-info">
+			</article>
+			<article class="col-sm-8 col-md-8 form-field" id="form-info">
 				<h2>Contact Information</h2>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -202,11 +199,11 @@
 				</p>
 				<p class="input-group input-group-lg">
 					<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-				    <input type="number" placeholder="Number *" class="form-control" id="zip" required max="10">
+				    <input type="number" placeholder="Number *" class="form-control" id="zip" required >
 				</p>
 		
-				<p><button type="submit" class="btn btn-secondary btn-lg" style="color: #fff; background-color: #4caf50">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>	
-			</fieldset>
+				<p><button type="submit" class="btn btn-secondary btn-lg submit-btn" style="color: #fff; background-color: #4caf50">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>	
+			</article>
 		</form>
 	</div>
 	<footer class="container-fluid">
