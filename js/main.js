@@ -67,46 +67,46 @@ $(document).ready(function(){
 
 	$('#form-location button.next').click(function(){
 		var value;
-		// $('#form-location input').each(function(){
-		// 	if($(this).val() != ''){
-		// 		value = true;
-		// 	}else{
-		// 		value = false;
-		// 	}
-		// 	return value;
-		// })
-		// if(value){
+		$('#form-location input').each(function(){
+			if($(this).val() != ''){
+				value = true;
+			}else{
+				value = false;
+			}
+			return value;
+		})
+		if(value){
 			$('#form-location, .img-area').fadeOut();
 			$('#form-type').slideDown();
 			$('.stage span.active').removeClass('active');
 			$('.stage span.span2').addClass('active')
-		// }else{
+		}else{
 			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
 			$('.message').fadeOut(4000)
-		// }
+		}
 		
 	});
 
 	$('#form-type button.next').click(function(){
 		var value;
-		// $('#form-type input').each(function(){
-		// 	if($(this).val() != ''){
-		// 		value = true;
-		// 	}else{
-		// 		value = false;
-		// 	}
-		// 	return value;
-		// })
-		// if(value){
+		$('#form-type input').each(function(){
+			if($(this).val() != ''){
+				value = true;
+			}else{
+				value = false;
+			}
+			return value;
+		})
+		if(value){
 			$('#form-type').fadeOut();
 			$('.img-area').show();
 			$('#form-info').slideDown();
 			$('.stage span.active').removeClass('active');
 			$('.stage span.span3').addClass('active')
-		// }else{
+		}else{
 			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
 			$('.message').fadeOut(4000)
-		// }
+		}
 		
 	});
 
