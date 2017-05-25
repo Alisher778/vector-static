@@ -111,10 +111,15 @@ fieldset button.active{background-color: color: #fff; background-color: #337ab7;
 .input-group-addon{background-color: orange; color:#fff;}
 
 /*===>>>> Location form*/
-#form-location{display: none;}
-.location-img{display: none;}
+#form-location{display: ;}
+.location-img{display: ;}
+button.next{width: 200px;}
 
 /*===>>>> Building Type form*/
+
+fieldset#form-type{display: none}
+.type-img{display: none;}
+
 .select-type{display: flex; justify-content: center; align-items: center;}
 .building{flex: 0 32%; display: flex; flex-direction: column; align-items: center; position: relative; opacity: 0.5;}
 .building:hover{opacity: 1;}
@@ -139,7 +144,7 @@ input[type=radio].no:after{content: "No"}
 .back-next-btn button{display: flex; justify-content: flex-start; margin-top: 40px; width: 150px; align-items: center;}
 .back-next-btn button:nth-child(2){margin-left: auto;}
 
-
+#form-info{display: none;}
 
 
 

@@ -12,7 +12,7 @@
 	<!-- <link rel="stylesheet" href="elromco/elromco.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<script src="js/parallax.min.js"></script>
@@ -81,7 +81,7 @@
 			</li>
 		</ul>
 
-		<form action="" class="col-sm-10 col-md-12">
+		<form action="" class="col-sm-10 col-md-12" name="myform" novalidate>
 		<audio src="js/horn.mp3" id="horn"></audio>
 			<div class="col-sm-4 col-md-4 img-area">
 				<img src="img/truck.png" alt="" class="truck location-img">
@@ -114,7 +114,7 @@
 					<span class="input-group-addon glyphicon glyphicon-flag"></span>
 				    <input type="text" placeholder="Country *" class="form-control" id="country" required>
 				</p>
-				<p><button type="button" class="btn btn-secondary btn-lg pull-right">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
+				<p><button type="button" class="btn btn-secondary btn-lg next">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
 			</fieldset>
 			<fieldset class="col-sm-8 col-md-8 form-field" id="form-type">
 				<div class="select-type">
@@ -189,6 +189,23 @@
 
 				</p>
 				
+			</fieldset>
+			<fieldset class="col-sm-8 col-md-8 form-field" id="form-info">
+				<h2>Contact Information</h2>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+				    <input type="text" placeholder="Name *" class="form-control" id="street" required>
+				</p>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+				    <input type="email" placeholder="Email *" class="form-control" id="apt">
+				</p>
+				<p class="input-group input-group-lg">
+					<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+				    <input type="number" placeholder="Number *" class="form-control" id="zip" required max="10">
+				</p>
+		
+				<p><button type="submit" class="btn btn-secondary btn-lg" style="color: #fff; background-color: #4caf50">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>	
 			</fieldset>
 		</form>
 	</div>

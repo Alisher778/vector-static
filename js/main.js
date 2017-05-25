@@ -60,4 +60,29 @@ $(document).ready(function(){
 		});
 		horn.play();
 	})
+
+
+
+	// ==Form On click next button move to next button
+
+	$('button.next').click(function(){
+		$('#form-location').hide();
+		console.log('Hello')
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
