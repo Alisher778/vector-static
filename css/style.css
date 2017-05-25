@@ -135,6 +135,9 @@ input[type=radio].no:after{content: "No"}
 .floor, .bedroom-number, .date{margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px;}
 .floor select, .bedroom-number select, .date select{width: 80%; background-color: #fff; border: 2px solid orange; font-size: 20px; height: 50px; outline: none;}
 .date input[type=date]{border: 2px solid orange; height: 50px; width: 80%; font-size: 20px; margin: 0 auto;}
+.back-next-btn{display: flex; justify-content: flex-start;}
+.back-next-btn button{display: flex; justify-content: flex-start; margin-top: 40px; width: 150px; align-items: center;}
+.back-next-btn button:nth-child(2){margin-left: auto;}
 
 
 
