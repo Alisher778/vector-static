@@ -159,7 +159,7 @@ input[type=radio].yes:checked:after, input[type=radio].no:checked:after{text-sha
 input[type=radio].yes:after{content: "Yes"}
 input[type=radio].no:after{content: "No"}
 
-.floor, .bedroom-number, .date{margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px;}
+.floor, .bedroom-number, .date{margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px; padding-bottom: 20px;}
 .floor select, .bedroom-number select, .date select{width: 80%; background-color: #fff; border: 2px solid orange; font-size: 20px; height: 50px; outline: none;}
 .date input[type=date]{border: 2px solid orange; height: 50px; width: 80%; font-size: 20px; margin: 0 auto;}
 .back-next-btn button{margin-top: 40px;}
@@ -167,7 +167,7 @@ button.back{width: 200px; background-color: #4caf50; color: #fff;}
 .back-next-btn button:nth-child(1){float: left;}
 .back-next-btn button:nth-child(2){float: right;}
 #form-info{display: none;}
-
+.pick-up-details{border-right: 2px solid #eee;}
 
 
 
