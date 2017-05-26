@@ -168,7 +168,8 @@ button.back{width: 200px; background-color: #4caf50; color: #fff;}
 .back-next-btn button:nth-child(2){float: right;}
 #form-info{display: none;}
 .pick-up-details{border-right: 2px solid #eee;}
-
+.type-wrapper h2{padding-top: 10px; padding-bottom: 20px; border-bottom: 2px solid #eee;}
+.submit-btn{width: 200px;} 
 
 
 

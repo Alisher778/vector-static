@@ -94,24 +94,24 @@
 					<h2>Pick-up Address</h2>
 					<div class="address">
 						<p class="input-group input-group-lg">
-							<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
-						    <input type="text" placeholder="Street Address *" class="form-control" id="p-street" required>
+							<span class="input-group-addon glyphicon glyphicon-map-marker" ></span>
+						    <input type="text" placeholder="Street Address *" class="form-control" id="p-street" name="p-street"required>
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-home"></span>
-						    <input type="text" placeholder="Apt" class="form-control" id="p-apt" name="apartment">
+						    <input type="text" placeholder="Apt" class="form-control" id="p-apt" name="p-apartment">
 						</p>
 					</div>
 					
 					<div class="address-more">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
-						    <input type="text" placeholder="City *" class="form-control" id="p-city" required name="city">
+						    <input type="text" placeholder="City *" class="form-control" id="p-city" required name="p-city">
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
 						    
-						    <select placeholder="State *" class="form-control" id="p-state" required name="state">
+						    <select placeholder="State *" class="form-control" id="p-state" required name="p-state">
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
 								<option value="AZ">Arizona</option>
@@ -167,7 +167,7 @@
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-tags"></span>
-						    <input type="number" placeholder="Zip*" class="form-control" id="p-zip" maxlength="5" required name="zip-code">
+						    <input type="number" placeholder="Zip*" class="form-control" id="p-zip" maxlength="5" minlength="5" required name="p-zip-code">
 						</p>
 					</div>
 				</div>
@@ -177,23 +177,23 @@
 					<div class="address">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
-						    <input type="text" placeholder="Street Address *" class="form-control" id="d-street" required>
+						    <input type="text" placeholder="Street Address *" class="form-control" id="d-street" name="d-street" required>
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-home"></span>
-						    <input type="text" placeholder="Apt" class="form-control" id="d-apt" name="apartment">
+						    <input type="text" placeholder="Apt" class="form-control" id="d-apt" name="d-apartment">
 						</p>
 					</div>
 					
 					<div class="address-more">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
-						    <input type="text" placeholder="City *" class="form-control" id="d-city" required name="city">
+						    <input type="text" placeholder="City *" class="form-control" id="d-city" required name="d-city">
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
 						    
-						    <select placeholder="State *" class="form-control" id="d-state" required name="state">
+						    <select placeholder="State *" class="form-control" id="d-state" required name="d-state">
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
 								<option value="AZ">Arizona</option>
@@ -249,7 +249,7 @@
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-tags"></span>
-						    <input type="number" placeholder="Zip*" class="form-control" id="d-zip" maxlength="5" required name="zip-code">
+						    <input type="number" placeholder="Zip*" class="form-control" id="d-zip" maxlength="5" minlength="5"  required name="d-zip-code">
 						</p>
 					</div>
 					
@@ -261,6 +261,7 @@
 			<article class="col-sm-12 col-md-12 form-field" id="form-type">
 				<div class="type-wrapper">
 					<div class="col-sm-10 col-md-6 pick-up-details">
+					<h2><b>Pick-up</b></h2>
 					<div class="select-type">
 					    <div class="building selected">
 					        <img src="img/apt.png" alt="" class="img-responsive">
@@ -322,6 +323,7 @@
 				</div>
 
 				<div class="col-sm-10 col-md-6 drop-off-details">
+					<h2><b>Drop-off</b></h2>
 					<div class="select-type">
 					<div class="building selected">
 						<img src="img/apt.png" alt="" class="img-responsive">
@@ -417,7 +419,7 @@
 					<button type="button" class="btn btn-secondary btn-lg back">
 						<i class="fa fa-long-arrow-left" aria-hidden="true"></i> BACK
 					</button>
-					<button type="submit" class="btn btn-secondary btn-lg next">SEND
+					<button type="submit" class="btn btn-secondary btn-lg submit-btn">SEND
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 					</button>	
 				</p>

@@ -149,14 +149,25 @@ $(document).ready(function(){
 	});
 
 //########################### Select Building Type #############################################
-	$('.building').click(function(){
-		$('.select-type div.building').removeClass('selected');
-		$('.select-type div.building input').removeAttr('checked');
-		$('.select-type div.building button').removeClass('active');
+	$('.pick-up-details .building').click(function(){
+		$('.pick-up-details div.building').removeClass('selected');
+		$('.pick-up-details div.building input').removeAttr('checked');
+		$('.pick-up-details div.building button').removeClass('active');
 
 		$(this).addClass('selected');
-		$('.building.selected button').addClass('active');
-		$('.building.selected input').attr('checked', 'cheched');
+		$('.pick-up-details .building.selected button').addClass('active');
+		$('.pick-up-details .building.selected input').attr('checked', 'cheched');
+		
+	});
+
+	$('.drop-off-details .building').click(function(){
+		$('.drop-off-details div.building').removeClass('selected');
+		$('.drop-off-details div.building input').removeAttr('checked');
+		$('.drop-off-details div.building button').removeClass('active');
+
+		$(this).addClass('selected');
+		$('.drop-off-details .building.selected button').addClass('active');
+		$('.drop-off-details .building.selected input').attr('checked', 'cheched');
 		
 	})
 
@@ -182,6 +193,8 @@ $(document).ready(function(){
 
 //  ===================== Data for Table   ===============================
 
+var movingData;
+
 $('form#quote-form :input').on("change keyup paste", function(){
 	// Conatct info
 
@@ -189,19 +202,51 @@ $('form#quote-form :input').on("change keyup paste", function(){
 		var $tel = $('#tel').val();
 		var $name = $('#name').val();
 	// Location
-		var $build = $('input[name=building-type]:checked').val();
+		// Pick up address
+		var $pStreet = $('#p-street').val();
+		var $pApartment = $('#p-apt').val();
+		var $pCity = $('#p-city').val();
+		var $pState = $('#p-state').val();
+		var $pZip = $('#p-zip').val();
 
-	var data = {name: $name, 
-				email: $email,
-				tel: $tel,
-				build: $build
-				}
-				console.log(data);
+		// Drop off address 
+		var $dStreet = $('#d-street').val();
+		var $dApartment = $('#d-apt').val();
+		var $dCity = $('#d-city').val();
+		var $dState = $('#d-state').val();
+		var $dZip = $('#d-zip').val();
+
+	// Address Type Details
+		// Pick-up details
+		var $pType = $('input[name=pick-up-building-type]:checked').val();
+		var $pElevator = $('input[name=pick-up-elevator]:checked').val();
+		var $pStairs = $('input[name=pick-up-stairs]:checked').val();
+		var $pFloor = $('input[name=pick-up-num-stairs]:checked').val();
+		var $pBedroom = $('input[name=pick-up-num-bedrooms]:checked').val();
+		
+		// Dropp-off details
+		var $dType = $('input[name=drop-off-building-type]:checked').val();
+		var $dElevator = $('input[name=drop-off-elevator]:checked').val();
+		var $dStairs = $('input[name=drop-off-stairs]:checked').val();
+		var $dFloor = $('input[name=drop-off-num-stairs]:checked').val();
+		var $dBedroom = $('input[name=drop-off-num-bedrooms]:checked').val();
+
+		// Moving Date
+		var $moveDate = $('.date input[type=date]').val();
+		var data = {	name: $name, email: $email, tel: $tel, moveDate: $moveDate,
+						pickUpAddress:{ pStreet: $pStreet, pApartment: $pApartment, pCity: $pCity, pState: $pState,pZip: $pZip },
+						dropOffAddress:{ dStreet: $dStreet, dApartment: $dApartment, dCity: $dCity, dState: $dState, dZip: $dZip },
+						pickUpAddressType: { pType:$pType, pElevator: $pElevator, pStairs: $pStairs, pFloor: $pFloor, pBedroom: $pBedroom },
+						dropOffAddressType: { dType:$dType, dElevator: $dElevator, dStairs: $dStairs, dFloor: $dFloor, dBedroom: $dBedroom }
+				   }	
+					console.log(data);
+		movingData = data;
 })
 
-
+	console.log(movingData)
 
 	$('.submit-btn').click(function(){
+		console.log(movingData)
 		var value;
 		$('#form-info input').each(function(){
 			if($(this).val() != ''){
