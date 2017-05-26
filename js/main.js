@@ -15,7 +15,7 @@ $(document).ready(function(){
 	});
 
 	// form image map truck animation =======================================
-	$('#street').focus(function(){
+	$('#p-street').focus(function(){
 		var horn = $('#horn')[0];
 		$('.truck').animate({'top':'16%', right: '20%'}, 2000, function(){
 			$(this).css({"transform":"rotateY(0deg)"})
@@ -23,39 +23,49 @@ $(document).ready(function(){
 		horn.play();
 	});
 
-	$('#apt').focus(function(){
+	$('#p-apt').focus(function(){
 		var horn = $('#horn')[0];
 		$('.truck').animate({'top': '42%', 'right': '20%'}, 2000, function(){
 			$(this).css({"transform":"rotateY(180deg)"})
 		});
 	});
 
-	$('#zip').focus(function(){
+	$('#p-city').focus(function(){
 		var horn = $('#horn')[0];
 		$('.truck').animate({'top': '42%', 'right': '68%'}, 2000, function(){
 			$(this).css({"transform":"rotateY(180deg)"})
 		});
 	});
 
-	$('#city').focus(function(){
+	$('#p-zip').focus(function(){
 		var horn = $('#horn')[0];
-		$('.truck').animate({'top': '60%', 'right': '68%'}, 2000, function(){
-			$(this).css({"transform":"rotateY(0deg)"})
-		});
-	});
-
-	$('#state').focus(function(){
-		var horn = $('#horn')[0];
-		$('.truck').animate({'top': '60%', 'right': '20%'}, 2000, function(){
+		$('.truck').animate({'top': '58%', 'right': '68%'}, 2000, function(){
 			$(this).css({"transform":"rotateY(0deg)"})
 		});
 	});
 
 
-	$('#country').focus(function(){
-		console.log('hello')
-		var horn = $('#horn')[0];
-		$('.truck').animate({'top': '89%', 'right': '60%'}, 2000, function(){
+	$('#d-street').focus(function(){
+		$('.truck').animate({'top': '65%', 'right': '40%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(0deg)"})
+		});
+	});
+
+
+	$('#d-apt').focus(function(){
+		$('.truck').animate({'top': '65%', 'right': '20%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(0deg)"})
+		});
+	})
+
+	$('#d-city').focus(function(){
+		$('.truck').animate({'top': '90%', 'right': '20%'}, 2000, function(){
+			$(this).css({"transform":"rotateY(180deg)"})
+		});
+		
+	})
+	$('#d-zip').focus(function(){
+		$('.truck').animate({'top': '90%', 'right': '70%'}, 2000, function(){
 			$(this).css({"transform":"rotateY(180deg)"})
 		});
 		horn.play();
@@ -111,6 +121,12 @@ $(document).ready(function(){
 		
 	});
 
+
+	$('#p-zip').keyup(function(){
+		if($(this).val().length == 5){
+			$('#d-street').focus()
+		}
+	})
 // ====================== Phone Number Validation ==========================
 	 $("input[type=tel]").on("change keyup paste", function () {
 	    var output;
@@ -133,23 +149,23 @@ $(document).ready(function(){
 
 //  ===================== Data for Table   ===============================
 
-$('form#quote-form :input').on("change keyup paste", function(){
-	// Conatct info
+// $('form#quote-form :input').on("change keyup paste", function(){
+// 	// Conatct info
 
-		var $email = $('#email').val();
-		var $tel = $('#tel').val();
-		var $name = $('#name').val();
-	// Location
-		var $email = $('#email').val();
-		var $tel = $('#tel').val();
-		var $name = $('#name').val();
+// 		var $email = $('#email').val();
+// 		var $tel = $('#tel').val();
+// 		var $name = $('#name').val();
+// 	// Location
+// 		var $email = $('#email').val();
+// 		var $tel = $('#tel').val();
+// 		var $name = $('#name').val();
 
-	var data = {name: $name, 
-				email: $email,
-				tel: $tel
-				}
-				console.log(data);
-})
+// 	var data = {name: $name, 
+// 				email: $email,
+// 				tel: $tel
+// 				}
+// 				console.log(data);
+// })
 
 
 

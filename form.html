@@ -89,29 +89,29 @@
 				<img src="img/city.png" alt="" class="img-responsive type-img">
 			</div>
 			<article class="col-sm-8 col-md-8 form-field" id="form-location">
-				<div class="pick-up">
+				<div class="moving-address">
 					<div class="pick-up">
 					<h2>Pick-up Address</h2>
 					<div class="address">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
-						    <input type="text" placeholder="Street Address *" class="form-control" id="street" required>
+						    <input type="text" placeholder="Street Address *" class="form-control" id="p-street" required>
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-home"></span>
-						    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt" name="apartment">
+						    <input type="text" placeholder="Apt/suit number" class="form-control" id="p-apt" name="apartment">
 						</p>
 					</div>
 					
 					<div class="address-more">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
-						    <input type="text" placeholder="City *" class="form-control" id="city" required name="city">
+						    <input type="text" placeholder="City *" class="form-control" id="p-city" required name="city">
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
 						    
-						    <select placeholder="State *" class="form-control" id="state" required name="state">
+						    <select placeholder="State *" class="form-control" id="p-state" required name="state">
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
 								<option value="AZ">Arizona</option>
@@ -167,7 +167,7 @@
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-tags"></span>
-						    <input type="number" placeholder="Zip*" class="form-control" id="zip" required name="zip-code">
+						    <input type="number" placeholder="Zip*" class="form-control" id="p-zip" maxlength="5" required name="zip-code">
 						</p>
 					</div>
 				</div>
@@ -177,23 +177,23 @@
 					<div class="address">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
-						    <input type="text" placeholder="Street Address *" class="form-control" id="street" required>
+						    <input type="text" placeholder="Street Address *" class="form-control" id="d-street" required>
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-home"></span>
-						    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt" name="apartment">
+						    <input type="text" placeholder="Apt/suit number" class="form-control" id="d-apt" name="apartment">
 						</p>
 					</div>
 					
 					<div class="address-more">
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
-						    <input type="text" placeholder="City *" class="form-control" id="city" required name="city">
+						    <input type="text" placeholder="City *" class="form-control" id="d-city" required name="city">
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
 						    
-						    <select placeholder="State *" class="form-control" id="state" required name="state">
+						    <select placeholder="State *" class="form-control" id="d-state" required name="state">
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
 								<option value="AZ">Arizona</option>
@@ -249,7 +249,7 @@
 						</p>
 						<p class="input-group input-group-lg">
 							<span class="input-group-addon glyphicon glyphicon-tags"></span>
-						    <input type="number" placeholder="Zip*" class="form-control" id="zip" required name="zip-code">
+						    <input type="number" placeholder="Zip*" class="form-control" id="d-zip" maxlength="5" required name="zip-code">
 						</p>
 					</div>
 					
