@@ -94,7 +94,7 @@ $(document).ready(function(){
 		}else{
 			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`);
 			$('.message').fadeOut(4000);
-			$('#form-location input:invalid').css('border', '1px solid red')
+			$('#form-location input:invalid').css('border', '1px solid red');
 		}
 		
 	});
@@ -123,10 +123,11 @@ $(document).ready(function(){
 			$('.img-area').show();
 			$('#form-info').slideDown();
 			$('.stage span.active').removeClass('active');
-			$('.stage span.span3').addClass('active')
+			$('.stage span.span3').addClass('active');
 		}else{
-			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
-			$('.message').fadeOut(4000)
+			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`);
+			$('.message').fadeOut(4000);
+			$('#form-type input:invalid').css('border', '1px solid red');
 		}
 		
 	});
@@ -221,15 +222,15 @@ $('form#quote-form :input').on("change keyup paste", function(){
 		var $pType = $('input[name=pick-up-building-type]:checked').val();
 		var $pElevator = $('input[name=pick-up-elevator]:checked').val();
 		var $pStairs = $('input[name=pick-up-stairs]:checked').val();
-		var $pFloor = $('input[name=pick-up-num-stairs]:checked').val();
-		var $pBedroom = $('input[name=pick-up-num-bedrooms]:checked').val();
+		var $pFloor = $('#pick-up-floor').val();
+		var $pBedroom = $('#pick-up-bedroom').val();
 		
 		// Dropp-off details
 		var $dType = $('input[name=drop-off-building-type]:checked').val();
 		var $dElevator = $('input[name=drop-off-elevator]:checked').val();
 		var $dStairs = $('input[name=drop-off-stairs]:checked').val();
-		var $dFloor = $('input[name=drop-off-num-stairs]:checked').val();
-		var $dBedroom = $('input[name=drop-off-num-bedrooms]:checked').val();
+		var $dFloor = $('#drop-off-floor').val();
+		var $dBedroom = $('#drop-off-bedroom').val();
 
 		// Moving Date
 		var $moveDate = $('.date input[type=date]').val();
@@ -245,7 +246,8 @@ $('form#quote-form :input').on("change keyup paste", function(){
 
 	console.log(movingData)
 
-	$('.submit-btn').click(function(){
+	$('.submit-btn').click(function(e){
+		e.preventDefault();
 		console.log(movingData)
 		var value;
 		$('#form-info input').each(function(){
