@@ -14,7 +14,7 @@ $(document).ready(function(){
 	  });
 	});
 
-	// form image map truck animation =======================================
+//########################### form image map truck animation #############################################
 	$('#p-street').focus(function(){
 		var horn = $('#horn')[0];
 		$('.truck').animate({'top':'16%', right: '20%'}, 2000, function(){
@@ -71,62 +71,95 @@ $(document).ready(function(){
 		horn.play();
 	})
 
+//############################################################################################################
 
 
-	// ==Form On click next button move to next button
+//======== Form On click next button move to next button ====================================================
 
 	$('#form-location button.next').click(function(){
 		var value;
-		$('#form-location input').each(function(){
-			if($(this).val() != ''){
-				value = true;
-			}else{
-				value = false;
-			}
-			return value;
-		})
-		if(value){
+		// $('#form-location input').each(function(){
+		// 	if($(this).val() != ''){
+		// 		value = true;
+		// 	}else{
+		// 		value = false;
+		// 	}
+		// 	return value;
+		// })
+		// if(value){
 			$('#form-location, .img-area').fadeOut();
 			$('#form-type').slideDown();
 			$('.stage span.active').removeClass('active');
 			$('.stage span.span2').addClass('active')
-		}else{
-			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`);
-			$('.message').fadeOut(4000);
-			$('#form-location input:invalid').css('border', '1px solid red')
-		}
+		// }else{
+		// 	$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`);
+		// 	$('.message').fadeOut(4000);
+		// 	$('#form-location input:invalid').css('border', '1px solid red')
+		// }
 		
 	});
+// Back button
+	$('#form-type button.back').click(function(){
+		$('#form-type').fadeOut();
+		$('.stage span.active').removeClass('active');
+		$('.stage span.span1').addClass('active')
+		$('#form-location, .img-area').slideDown();
+	});
+
+// ###########################################################################################################
 
 	$('#form-type button.next').click(function(){
 		var value;
-		$('#form-type input').each(function(){
-			if($(this).val() != ''){
-				value = true;
-			}else{
-				value = false;
-			}
-			return value;
-		})
-		if(value){
+		// $('#form-type input').each(function(){
+		// 	if($(this).val() != ''){
+		// 		value = true;
+		// 	}else{
+		// 		value = false;
+		// 	}
+		// 	return value;
+		// })
+		// if(value){
 			$('#form-type').fadeOut();
 			$('.img-area').show();
 			$('#form-info').slideDown();
 			$('.stage span.active').removeClass('active');
 			$('.stage span.span3').addClass('active')
-		}else{
-			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
-			$('.message').fadeOut(4000)
-		}
+		// }else{
+		// 	$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
+		// 	$('.message').fadeOut(4000)
+		// }
 		
 	});
+
+// Back button for Building Type   ===============
+
+	$('#form-info button.back').click(function(){
+		$('#form-info, .img-area').fadeOut();
+		$('#form-type').slideDown();
+		$('.stage span.active').removeClass('active');
+		$('.stage span.span2').addClass('active')
+	});
+
 
 
 	$('#p-zip').keyup(function(){
 		if($(this).val().length == 5){
 			$('#d-street').focus()
 		}
+	});
+
+//########################### Select Building Type #############################################
+	$('.building').click(function(){
+		$('.select-type div.building').removeClass('selected');
+		$('.select-type div.building input').removeAttr('checked');
+		$('.select-type div.building button').removeClass('active');
+
+		$(this).addClass('selected');
+		$('.building.selected button').addClass('active');
+		$('.building.selected input').attr('checked', 'cheched');
+		
 	})
+
 // ====================== Phone Number Validation ==========================
 	 $("input[type=tel]").on("change keyup paste", function () {
 	    var output;
@@ -149,23 +182,22 @@ $(document).ready(function(){
 
 //  ===================== Data for Table   ===============================
 
-// $('form#quote-form :input').on("change keyup paste", function(){
-// 	// Conatct info
+$('form#quote-form :input').on("change keyup paste", function(){
+	// Conatct info
 
-// 		var $email = $('#email').val();
-// 		var $tel = $('#tel').val();
-// 		var $name = $('#name').val();
-// 	// Location
-// 		var $email = $('#email').val();
-// 		var $tel = $('#tel').val();
-// 		var $name = $('#name').val();
+		var $email = $('#email').val();
+		var $tel = $('#tel').val();
+		var $name = $('#name').val();
+	// Location
+		var $build = $('input[name=building-type]:checked').val();
 
-// 	var data = {name: $name, 
-// 				email: $email,
-// 				tel: $tel
-// 				}
-// 				console.log(data);
-// })
+	var data = {name: $name, 
+				email: $email,
+				tel: $tel,
+				build: $build
+				}
+				console.log(data);
+})
 
 
 

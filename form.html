@@ -259,20 +259,27 @@
 				
 			</article>
 			<article class="col-sm-8 col-md-8 col-md-offset-2 form-field" id="form-type">
+				<!-- <div class="col-sm-10 col-md-6">
+
+				</div>
+				<div class="col-sm-10 col-md-6">
+
+				</div> -->
+			
 				<div class="select-type">
 					<div class="building selected">
 						<img src="img/apt.png" alt="" class="img-responsive">
-						<input type="radio"  value="Apartment" checked name="type-apt">
+						<input type="radio"  value="apartment" checked name="building-type">
 						<button class="btn btn-lg btn-primary active">Apartment</button>
 					</div>
 					<div class="building">
 						<img src="img/house.png" alt="" class="img-responsive">
-						<input type="radio"  value="Apartment" name="type-house">
+						<input type="radio"  value="house" name="building-type">
 						<button class="btn btn-lg btn-primary">House</button>
 					</div>
 					<div class="building">
 						<img src="img/office.png" alt="" class="img-responsive">
-						<input type="radio"  value="Apartment" name="type-office">
+						<input type="radio"  value="office" name="building-type">
 						<button class="btn btn-lg btn-primary">Office</button>
 					</div>
 				</div>
@@ -280,15 +287,15 @@
 					<div class="elevtaor">
 						<h4>Elevator</h4>
 						<div>
-							<input type="radio" value="yes" checked class="yes" name="el-yes">
-							<input type="radio" value="no" class="no" name="el-no">
+							<input type="radio" value="yes" checked class="yes" name="elevator">
+							<input type="radio" value="no" class="no" name="elevator">
 						</div>
 					</div>
 					<div class="stair">
 						<h4>Stairs</h4>
 						<div>
-							<input type="radio" value="yes" class="yes" name="stair-yes">
-							<input type="radio" value="no" class="no" checked name="stair-no">
+							<input type="radio" value="yes" class="yes" name="stairs">
+							<input type="radio" value="no" class="no" checked name="stairs">
 						</div>
 					</div>
 				</div>
@@ -322,10 +329,12 @@
 		             <input type='date' class="form-control" name="date"/>
 				</div>
 				<p class="back-next-btn">
+					<button type="button" class="btn btn-secondary btn-lg back">
+						<i class="fa fa-long-arrow-left" aria-hidden="true"></i> BACK
+					</button>
 					<button type="button" class="btn btn-secondary btn-lg next">NEXT
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 					</button>	
-
 				</p>
 				
 			</article>
@@ -344,7 +353,14 @@
 				    <input type="tel" placeholder="Number *" class="form-control" id="tel" required  name="tel">
 				</p>
 		
-				<p><button type="submit" class="btn btn-secondary btn-lg submit-btn" style="color: #fff; background-color: #4caf50">SUBMIT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>	
+				<p class="back-next-btn">
+					<button type="button" class="btn btn-secondary btn-lg back">
+						<i class="fa fa-long-arrow-left" aria-hidden="true"></i> BACK
+					</button>
+					<button type="submit" class="btn btn-secondary btn-lg next">SEND
+						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+					</button>	
+				</p>
 			</article>
 		</form>
 	</div>
