@@ -89,29 +89,174 @@
 				<img src="img/city.png" alt="" class="img-responsive type-img">
 			</div>
 			<article class="col-sm-8 col-md-8 form-field" id="form-location">
-				<h2>Pick-up Address</h2>
-				<p class="input-group input-group-lg">
-					<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
-				    <input type="text" placeholder="Street Address *" class="form-control" id="street" required>
-				</p>
-				<p class="input-group input-group-lg">
-					<span class="input-group-addon glyphicon glyphicon-home"></span>
-				    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt" name="apartment">
-				</p>
-				<p class="input-group input-group-lg">
-					<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
-				    <input type="text" placeholder="City *" class="form-control" id="city" required name="city">
-				</p>
-				<p class="input-group input-group-lg">
-					<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
-				    <input type="text" placeholder="State *" class="form-control" id="state" required name="state">
-				</p>
-				<p class="input-group input-group-lg">
-					<span class="input-group-addon glyphicon glyphicon-tags"></span>
-				    <input type="number" placeholder="Zip Code *" class="form-control" id="zip" required max="5" name="zip-code">
-				</p>
+				<div class="pick-up">
+					<div class="pick-up">
+					<h2>Pick-up Address</h2>
+					<div class="address">
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
+						    <input type="text" placeholder="Street Address *" class="form-control" id="street" required>
+						</p>
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-home"></span>
+						    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt" name="apartment">
+						</p>
+					</div>
+					
+					<div class="address-more">
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
+						    <input type="text" placeholder="City *" class="form-control" id="city" required name="city">
+						</p>
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
+						    
+						    <select placeholder="State *" class="form-control" id="state" required name="state">
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ" selected="selected">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>				
+						</p>
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-tags"></span>
+						    <input type="number" placeholder="Zip*" class="form-control" id="zip" required name="zip-code">
+						</p>
+					</div>
+				</div>
+
+				<div class="drop-off">
+					<h2>Drop-off Address</h2>
+					<div class="address">
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-map-marker" name="street"></span>
+						    <input type="text" placeholder="Street Address *" class="form-control" id="street" required>
+						</p>
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-home"></span>
+						    <input type="text" placeholder="Apt/suit number" class="form-control" id="apt" name="apartment">
+						</p>
+					</div>
+					
+					<div class="address-more">
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
+						    <input type="text" placeholder="City *" class="form-control" id="city" required name="city">
+						</p>
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon "><i class="fa fa-university" aria-hidden="true"></i></span>
+						    
+						    <select placeholder="State *" class="form-control" id="state" required name="state">
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ" selected="selected">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>				
+						</p>
+						<p class="input-group input-group-lg">
+							<span class="input-group-addon glyphicon glyphicon-tags"></span>
+						    <input type="number" placeholder="Zip*" class="form-control" id="zip" required name="zip-code">
+						</p>
+					</div>
+					
+					
+					<p><button type="button" class="btn btn-secondary btn-lg next">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
+				</div>
 				
-				<p><button type="button" class="btn btn-secondary btn-lg next">NEXT <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></p>
 			</article>
 			<article class="col-sm-8 col-md-8 col-md-offset-2 form-field" id="form-type">
 				<div class="select-type">
@@ -179,7 +324,7 @@
 				<p class="back-next-btn">
 					<button type="button" class="btn btn-secondary btn-lg next">NEXT
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-					</button>
+					</button>	
 
 				</p>
 				

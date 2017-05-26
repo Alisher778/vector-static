@@ -81,8 +81,9 @@ $(document).ready(function(){
 			$('.stage span.active').removeClass('active');
 			$('.stage span.span2').addClass('active')
 		}else{
-			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`)
-			$('.message').fadeOut(4000)
+			$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`);
+			$('.message').fadeOut(4000);
+			$('#form-location input:invalid').css('border', '1px solid red')
 		}
 		
 	});

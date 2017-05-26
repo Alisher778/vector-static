@@ -109,12 +109,34 @@ article button{position: relative; buttom: 10px; width: 90%;}
 article button.active{background-color: color: #fff; background-color: #337ab7; border-color: #2e6da4;}
 .btn-group-lg>.btn, .btn-lg{background-color: orange; padding: 15px 30px; }
 .input-group-addon{background-color: orange; color:#fff;}
+.input-group-addon:first-child{position: relative; top: -0.5px;}
 
 /*===>>>> Location form*/
 #form-location{display: ;}
 .location-img{display: ;}
 button.next{width: 200px;}
 .message{position: absolute; top: 10px; right: 20px; background-color: red; padding: 18px 40px; color: #fff; z-index: 3; font-size: 44px; border-radius: 11px;}
+.address{display: flex; padding: auto 0;}
+.address p:nth-of-type(1){width: 75%;}
+.address p:nth-of-type(2){width: 22%; margin-left: auto;}
+.address-more{display: flex; justify-content: center;}
+.address-more p{width: 37.5%;}
+.address-more p:nth-of-type(2){padding-left: 20px;}
+.address-more p:nth-of-type(3){width: 22%; margin-left: auto;}
+.drop-off{margin-top: 25px; padding-top: 25px; border-top: 2px solid #eee}
+.drop-off button.next{ margin-top: 25px; }
+
+
+
+
+
+
+
+
+
+
+
+
 /*===>>>> Building Type form*/
 
 article#form-type{display: none}
@@ -141,7 +163,7 @@ input[type=radio].no:after{content: "No"}
 .floor select, .bedroom-number select, .date select{width: 80%; background-color: #fff; border: 2px solid orange; font-size: 20px; height: 50px; outline: none;}
 .date input[type=date]{border: 2px solid orange; height: 50px; width: 80%; font-size: 20px; margin: 0 auto;}
 .back-next-btn button{margin-top: 40px;}
-.back-next-btn button:nth-child(2){margin-left: auto;}
+.back-next-btn button:nth-child(2){margin-left: auto; }
 
 #form-info{display: none;}
 
