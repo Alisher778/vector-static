@@ -124,6 +124,7 @@ $(document).ready(function(){
 			$('#form-info').slideDown();
 			$('.stage span.active').removeClass('active');
 			$('.stage span.span3').addClass('active');
+		}
 		// }else{
 		// 	$('form[name=myform]').append(`<div class="message">Make sure all fields are filled out!</div>`);
 		// 	$('.message').fadeOut(4000);
