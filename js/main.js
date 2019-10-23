@@ -131,7 +131,7 @@ $(document).ready(function(){
 		// 	$('#form-type input:invalid').css('border', '1px solid red');
 		// }
 		
-	});
+	};
 
 // Back button for Building Type   ===============
 
